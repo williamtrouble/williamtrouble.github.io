@@ -1,0 +1,426 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'PulpFictionItalic';
+    src: url('../fonts/fiction_italic.ttf');
+}
+
+@font-face {
+    font-family: 'PulpFiction';
+    src: url('../fonts/fiction.ttf');
+}
+
+@font-face {
+    font-family: 'SubSoviet';
+    src: url('../fonts/imperial.ttf');
+}
+
+
+@font-face {
+    font-family: 'Bolshevik';
+    src: url('../fonts/bolshevik.otf');
+}
+
+@font-face {
+    font-family: 'Agit';
+    src: url('../fonts/agit.ttf');
+}
+
+/* main */
+
+body, html {
+    height: 100%;
+    background: #515151;
+    background: linear-gradient(0deg, black, black, #a5a5a5);
+    overflow: hidden;
+    margin: 0;
+
+}
+
+.trouble { 
+    background-image: url('../assets/trouble.jpg');
+    background-color: black;
+    height: 100%; 
+    opacity: 0.5;
+    background-position: -8px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* titles */
+
+.titles {
+    display: inline-block;
+    position: absolute;
+    /*top: 1%;*/
+    left: 22.5%;
+    padding: 0.5rem;
+    z-index: 1000;
+    width: 50%;
+    margin: 0 auto;
+    opacity: 0.85;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    cursor: default;
+    font-weight: 200;
+}
+
+.first,
+.last {
+    font-family: PulpFictionItalic;
+    font-size: 3.5em;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.75;
+    letter-spacing: 0.4em;
+    line-height: 0.88em;
+    /*text-shadow: 3px 1px #232323;*/
+}
+
+.last {
+    bottom: 50px;
+}
+
+.song-name {
+    font-family: PulpFiction;
+    font-size: 2em;
+    position: relative;
+    bottom: 55px;
+    margin: 0 auto;
+    opacity: 0.55;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+/* player */
+
+.player {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    bottom: 10%;
+    left: 0px;
+    padding: 1rem;
+    z-index: 1000;
+    margin: 0 auto;
+    height: 150px;
+    background-color: #656565;
+    opacity: .45;
+    border-radius: 200px;
+    overflow: hidden;
+    width: 15%;
+}
+
+.play,
+.pause {
+    position: relative;
+    bottom: 50px;
+    right: 50px;
+    opacity: .9;
+}
+
+#wave {
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+    width: 20%;
+    opacity: .45;
+}
+
+/* footer */
+
+.resource {
+    width: 30%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.links {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 10;
+  padding: 1rem;
+  background-color: transparent;
+  z-index: 100;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.spotify {
+    position: relative;
+    top: 6px;
+}
+
+.google,
+.itunes {
+    position: relative;
+    top: 10px;
+}
+
+/* interactions */
+
+.hover-off {
+    opacity: .6;
+}
+
+.hover-on {
+    opacity: .9;
+    transition: all 0.25s;
+    transform: scale(1.01);
+}
+
+.hide {
+    display: none;
+}
+
+.darken {
+    opacity: 0.15;
+}
+
+.flicker {
+    opacity: 0.77;
+    visibility: visible;
+}
+
+/* media queries */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 667px) {
+
+    .trouble { 
+        background-image: url('../assets/trouble.jpg');
+        height: 100%; 
+        opacity: 0.4;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        overflow: hidden;
+    }
+    .resource {
+        display: block;
+        padding: 0.5em;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .player {
+        position: absolute;
+        right: 0;
+        bottom: 20%;
+        left: 0;
+        padding: 1rem;
+        z-index: 1000;
+        margin: 0.5em auto;
+    }
+
+    .play,
+    .pause {
+        position: relative;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .first,
+    .last {
+        font-size: 5em;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 0.75;
+        letter-spacing: 0.4em;
+        font-weight: 200;
+
+    }
+
+    .first {
+        top: 50px;
+    }
+
+    .last {
+        bottom: 30px;
+    }
+
+    .song-name {
+        font-size: 3em;
+        position: relative;
+        margin: 0 auto;
+        left: 5px;
+        bottom: 35px;
+        opacity: 0.55;
+        text-align: center;
+        letter-spacing: 0.5em;
+    }
+
+}
+
+/* iPhone landscape */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+
+    .trouble {
+        background-position: -50px -3px;
+        background-size: 122%;
+    }
+
+    .titles {
+        left: 15.5%;
+        width: 50%;
+    }
+
+
+    .first {
+        top: 4px;
+        font-size: 4em;
+        left: 275px;
+    }
+
+    .last {
+        width: 75%;
+        font-size: 4em;
+        left: 242px;
+        bottom: 55px;
+    }
+    
+    .song-name {
+        font-size: 2.5em;
+        left: 278px;
+        bottom: 63px;
+    }
+
+    .links {
+        width: 50%;
+        margin: 0 auto;
+        left: 97px;
+    }
+
+    .resource {
+        display: inline-block;
+        width: 25%
+    }
+
+    .player {
+        width: 75px;
+        height: 75px;
+        bottom: 424px;
+        right: 200px;
+    }
+
+    .play,
+    .pause {
+        width: 132px;
+        bottom: 28px;
+        left: -26px;
+    }
+
+}
+
+/* iPad portrait */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+    .trouble {
+        background-position: -315px -3px;
+    }
+
+    .titles {
+        width: 50%;
+    }
+
+    .first,
+    .last {
+        width: 75%;
+        font-size: 5em;
+        margin: 0 auto;
+        right: 50px;
+    }
+    
+    .song-name {
+        font-size: 3em;
+        left: 25px;
+    }
+
+    .links {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .resource {
+        display: inline-block;
+        width: 32%
+    }
+
+    .play,
+    .pause {
+        width: 200px;
+        bottom: 25px;
+        left: -23px;
+    }
+}
+
+/* iPad Landscape */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .trouble {
+        background-position: -8px -3px;
+    }
+
+    .titles {
+        width: 50%;
+    }
+
+    .first,
+    .last {
+        width: 75%;
+        font-size: 4em;
+        margin: 0 auto;
+        left: 249px;
+    }
+    
+    .song-name {
+        font-size: 3em;
+        left: 274px;
+    }
+
+    .links {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .resource {
+        display: inline-block;
+        width: 32%
+    }
+
+    .player {
+        width: 105px;
+        height: 105px;
+    }
+
+    .play,
+    .pause {
+        width: 160px;
+        bottom: 28px;
+        left: -26px;
+    }
+
+}
