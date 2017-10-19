@@ -174,7 +174,6 @@ body, html {
 .hover-on {
     opacity: .9;
     transition: all 0.25s;
-    transform: scale(1.01);
 }
 
 .hide {
