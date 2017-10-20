@@ -149,7 +149,7 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 45px;
   top: 10;
   padding: 1rem;
   background-color: transparent;
@@ -164,8 +164,9 @@ a {
 }
 
 .apple {
-    top: 53px;
+    top: 48px;
     position: relative;
+    width: 18%;
 }
 
 .google,
