@@ -136,7 +136,7 @@ body, html {
 /* footer */
 
 .resource {
-    width: 30%;
+    width: 20%;
     display: inline-block;
     cursor: pointer;
 }
@@ -150,13 +150,18 @@ body, html {
   padding: 1rem;
   background-color: transparent;
   z-index: 100;
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
 }
 
 .spotify {
     position: relative;
     top: 6px;
+}
+
+.apple {
+    top: 53px;
+    position: relative;
 }
 
 .google,
@@ -205,10 +210,22 @@ and (max-device-width : 667px) {
         z-index: -1;
         overflow: hidden;
     }
-    .resource {
-        display: block;
-        padding: 0.5em;
+
+    .links {
         width: 80%;
+        margin: 0 auto;
+        left: 65px;
+    }
+
+    .apple {
+        top: 57px;
+        position: relative;
+    }
+
+    .resource {
+        display: inline-block;
+        padding: 0.5em;
+        width: 20%;
         margin: 0 auto;
     }
 
@@ -306,7 +323,11 @@ and (orientation : landscape) {
 
     .resource {
         display: inline-block;
-        width: 25%
+        width: 20%
+    }
+
+    .apple {
+        top: 39px;
     }
 
     .player {
@@ -354,13 +375,18 @@ and (orientation : portrait) {
     }
 
     .links {
-        width: 50%;
+        width: 75%;
         margin: 0 auto;
+        left: 131px;
     }
 
     .resource {
         display: inline-block;
-        width: 32%
+        width: 20%
+    }
+
+    .apple {
+        top: 55px;
     }
 
     .play,
@@ -401,13 +427,18 @@ and (orientation : portrait) {
     }
 
     .links {
-        width: 50%;
+        width: 75%;
         margin: 0 auto;
+        left: 132px;
     }
 
     .resource {
         display: inline-block;
-        width: 32%
+        width: 20%
+    }
+
+    .apple {
+        top: 55px;
     }
 
     .player {
