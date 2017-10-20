@@ -37,6 +37,10 @@ body, html {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 .trouble { 
     background-image: url('../assets/trouble.jpg');
     background-color: black;
