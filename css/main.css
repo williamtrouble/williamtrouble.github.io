@@ -31,7 +31,7 @@
 body, html {
     height: 100%;
     background: #515151;
-    background: linear-gradient(0deg, black, black, #a5a5a5);
+    background: linear-gradient(to bottom, #e1e3e3 10%, #4d4e4f 40%, #1b1b1b);
     overflow: hidden;
     margin: 0;
 
@@ -43,7 +43,7 @@ a {
 
 .trouble { 
     background-image: url('../assets/done-it-again-bg.jpg');
-    background-color: black;
+    /*background-color: black;*/
     height: 100%; 
     opacity: 0.5;
     background-position: 0px 0px;
