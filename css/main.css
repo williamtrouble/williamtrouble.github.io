@@ -1,4 +1,4 @@
-/* FONTS */
+    /* FONTS */
 
 @font-face {
     font-family: 'PulpFictionItalic';
@@ -42,11 +42,11 @@ a {
 }
 
 .trouble { 
-    background-image: url('../assets/trouble.jpg');
+    background-image: url('../assets/done-it-again-bg.jpg');
     background-color: black;
     height: 100%; 
     opacity: 0.5;
-    background-position: -8px 0px;
+    background-position: 0px 0px;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -195,7 +195,7 @@ a {
 }
 
 .flicker {
-    opacity: 0.77;
+    opacity: 0.88;
     visibility: visible;
 }
 

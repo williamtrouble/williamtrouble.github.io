@@ -8,7 +8,7 @@ let play = $('.play'),
     a = $('.a');
 
 let runaway = new Howl({
-        src: ['assets/run_away.mp3'],
+        src: ['assets/done_it_again.mp3'],
         format: 'mp3',
         buffer: false,
         autoplay: false,
