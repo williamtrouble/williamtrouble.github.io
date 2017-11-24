@@ -206,7 +206,7 @@ and (min-device-width : 320px)
 and (max-device-width : 667px) {
 
     .trouble { 
-        background-image: url('../assets/trouble.jpg');
+        background-image: url('../assets/done-it-again-bg.jpg');
         height: 100%; 
         opacity: 0.4;
         background-position: center;
