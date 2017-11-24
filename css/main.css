@@ -209,7 +209,7 @@ and (max-device-width : 667px) {
         background-image: url('../assets/done-it-again-bg.jpg');
         height: 100%; 
         opacity: 0.4;
-        background-position: -1200px 0px;
+        background-position: -1000px 0px;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -1;
