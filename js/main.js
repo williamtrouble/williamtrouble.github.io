@@ -17,7 +17,6 @@ let runaway = new Howl({
     });
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/.test(navigator.userAgent) ) {
-    console.log('Mobile');
     $(document).ready( () => {
             $('body').fadeIn(1200);
             $('.player').fadeIn(1250);
@@ -25,7 +24,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/.test(navigat
             flicker(o);
     });
 } else {
-    console.log('Not mobile');
     $(document).ready( () => {
             $('body').fadeIn(1000);
             flicker(a);
